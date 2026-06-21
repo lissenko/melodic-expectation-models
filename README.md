@@ -10,18 +10,18 @@ pip install -r requirements.txt
 ## Pretrained model weights
 
 The 60 model checkpoints are attached to the
-[latest GitHub release](../../releases/latest): 30 LSTM (`model_seed*.pth`) and
-30 Transformer (`model_trial*.pth`) files.
+[latest GitHub release](../../releases/latest): 30 LSTM (`lstm_*.pth`) and
+30 Transformer (`transformer_*.pth`) files.
 
 Download them into place with the GitHub CLI (run from the repo root):
 
 ```bash
-gh release download --pattern "model_seed*.pth"  --dir checkpoints/lstm/
-gh release download --pattern "model_trial*.pth" --dir checkpoints/transformer/
+gh release download --pattern "lstm_*.pth"  --dir checkpoints/lstm/
+gh release download --pattern "transformer_*.pth" --dir checkpoints/transformer/
 ```
 
-Or download the files from the release page and put `model_seed*.pth` in
-`checkpoints/lstm/` and `model_trial*.pth` in `checkpoints/transformer/`.
+Or download the files from the release page and put `lstm_*.pth` in
+`checkpoints/lstm/` and `transformer_*.pth` in `checkpoints/transformer/`.
 
 ---
 
@@ -54,7 +54,7 @@ result = predict_ensemble(ensemble, "my_melody.mid")
 ```python
 from inference import load_single, predict_single
 
-model, norm = load_single("lstm", "checkpoints/lstm/model_seed042_epoch9.pth")
+model, norm = load_single("lstm", "checkpoints/lstm/lstm_01.pth")
 result = predict_single(model, norm, "my_melody.mid")
 ```
 
@@ -65,7 +65,7 @@ result = predict_single(model, norm, "my_melody.mid")
 python inference.py my_melody.mid lstm checkpoints/lstm/
 
 # Single checkpoint
-python inference.py my_melody.mid transformer checkpoints/transformer/model_trial01_epoch9.pth
+python inference.py my_melody.mid transformer checkpoints/transformer/transformer_01.pth
 ```
 
 ---
@@ -115,7 +115,7 @@ The paper ensembles 30 models per architecture, each trained with a different `-
 ```bash
 python training/train_lstm.py \
     --data /path/to/training/midi/ \
-    --out  checkpoints/lstm/model_seed42.pth \
+    --out  checkpoints/lstm/lstm_01.pth \
     --seed 42
 ```
 
@@ -129,7 +129,7 @@ Selected features: `pitch_class, contour, cpintfip, scale_degree, key_membership
 ```bash
 python training/train_transformer.py \
     --data /path/to/training/midi/ \
-    --out  checkpoints/transformer/model_trial1.pth \
+    --out  checkpoints/transformer/transformer_01.pth \
     --seed 1
 ```
 
