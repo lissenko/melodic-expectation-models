@@ -160,16 +160,16 @@ Selected features: `pitch, contour, duration, scale_degree, ioi`
 | `phrase` | 2 | One-hot phrase-boundary marker |
 | `is_repeated_pitch` | 1 | Binary: same pitch as the previous note |
 
----
+<!-- --- -->
 
-## Citation
+<!-- ## Citation -->
 
-```bibtex
-@article{lissenko2025melodicexpectation,
-  title   = {Deep Learning, Statistical Learning, and Rule-Based Models of Human Melodic Expectation},
-  author  = {Lissenko, Tanguy and Rocamora, Mart{\'i}n and Anglada-Tort, Manuel},
-  year    = {2025}
-}
-```
+<!-- ```bibtex -->
+<!-- @article{lissenko2025melodicexpectation, -->
+<!--   title   = {Deep Learning, Statistical Learning, and Rule-Based Models of Human Melodic Expectation}, -->
+<!--   author  = {Lissenko, Tanguy and Rocamora, Mart{\'i}n and Anglada-Tort, Manuel}, -->
+<!--   year    = {2025} -->
+<!-- } -->
+<!-- ``` -->
 
 
