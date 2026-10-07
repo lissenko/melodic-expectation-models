@@ -98,7 +98,19 @@ python evaluation/predict_stimuli.py --arch transformer --checkpoints checkpoint
 ```
 
 `results/predictions/` holds the predictions of the four models of the paper (Temperley's model, IDyOM,
-LSTM, Transformer). The stimuli in `data/stimuli/` are timed as participants heard them, and
+LSTM, Transformer). `results/idyom_output/` holds IDyOM's raw output (`.dat`) for the same predictions:
+
+```lisp
+(idyom:idyom <dataset> '(cpitch) '(cpitch cpitch-class tessitura cpint contour cpintfip cpintfref
+                                   (cpint dur) (cpint bioi) (cpint bioi-ratio-q) (cpint bioi-contour-q))
+             :pretraining-ids '(<training set>) :k 1 :models :both
+             :ltmo '(:order-bound nil :escape :x :update-exclusion t) :stmo '(:order-bound nil) :detail 3)
+```
+
+For Cuddy and Lunney, Schellenberg, and Fogel et al., each stimulus ends with one appended note, and
+IDyOM's distribution over this note is its distribution over the continuation of the context.
+
+The stimuli in `data/stimuli/` are timed as participants heard them, and
 `data/stimulus_keys.json` gives their notated keys. The values of Manzara et al. were read from
 Pearce (2005, Figures 8.7 and 8.8).
 
