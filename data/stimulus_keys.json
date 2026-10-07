@@ -1,0 +1,409 @@
+{
+ "_source": "Notated keys of the stimuli (plan D3, 30 Sep 2026). fogel: Fogel et al. tonic list, all major. schellenberg: key signature, mode inferred within major/relative minor (4 major, 4 minor as reported). manzara: key signatures (Chorale 61 = long, E-flat major; Chorale 151 = short, G major). cuddy_lunney: absent on purpose, music21 is used. Values: [tonic pitch class, mode].",
+ "fogel": {
+  "NC08": [
+   3,
+   "major"
+  ],
+  "NC09": [
+   10,
+   "major"
+  ],
+  "NC10": [
+   5,
+   "major"
+  ],
+  "NC11": [
+   0,
+   "major"
+  ],
+  "NC12": [
+   7,
+   "major"
+  ],
+  "NC13": [
+   2,
+   "major"
+  ],
+  "NC14": [
+   9,
+   "major"
+  ],
+  "NC15": [
+   4,
+   "major"
+  ],
+  "NC16": [
+   11,
+   "major"
+  ],
+  "NC17": [
+   6,
+   "major"
+  ],
+  "NC01": [
+   7,
+   "major"
+  ],
+  "NC18": [
+   1,
+   "major"
+  ],
+  "NC19": [
+   8,
+   "major"
+  ],
+  "NC20": [
+   3,
+   "major"
+  ],
+  "NC21": [
+   10,
+   "major"
+  ],
+  "NC22": [
+   5,
+   "major"
+  ],
+  "NC23": [
+   0,
+   "major"
+  ],
+  "NC24": [
+   2,
+   "major"
+  ],
+  "NC25": [
+   9,
+   "major"
+  ],
+  "NC26": [
+   4,
+   "major"
+  ],
+  "NC02": [
+   2,
+   "major"
+  ],
+  "NC27": [
+   11,
+   "major"
+  ],
+  "NC28": [
+   6,
+   "major"
+  ],
+  "NC29": [
+   1,
+   "major"
+  ],
+  "NC30": [
+   8,
+   "major"
+  ],
+  "NC31": [
+   3,
+   "major"
+  ],
+  "NC32": [
+   10,
+   "major"
+  ],
+  "NC33": [
+   5,
+   "major"
+  ],
+  "NC34": [
+   0,
+   "major"
+  ],
+  "NC35": [
+   7,
+   "major"
+  ],
+  "NC36": [
+   2,
+   "major"
+  ],
+  "NC37": [
+   9,
+   "major"
+  ],
+  "NC38": [
+   4,
+   "major"
+  ],
+  "NC39": [
+   11,
+   "major"
+  ],
+  "NC40": [
+   6,
+   "major"
+  ],
+  "NC41": [
+   1,
+   "major"
+  ],
+  "NC42": [
+   8,
+   "major"
+  ],
+  "NC43": [
+   3,
+   "major"
+  ],
+  "NC44": [
+   10,
+   "major"
+  ],
+  "NC45": [
+   5,
+   "major"
+  ],
+  "NC03": [
+   4,
+   "major"
+  ],
+  "NC04": [
+   11,
+   "major"
+  ],
+  "NC05": [
+   6,
+   "major"
+  ],
+  "NC06": [
+   1,
+   "major"
+  ],
+  "NC07": [
+   8,
+   "major"
+  ],
+  "AC08": [
+   3,
+   "major"
+  ],
+  "AC09": [
+   10,
+   "major"
+  ],
+  "AC10": [
+   5,
+   "major"
+  ],
+  "AC11": [
+   0,
+   "major"
+  ],
+  "AC12": [
+   7,
+   "major"
+  ],
+  "AC13": [
+   2,
+   "major"
+  ],
+  "AC14": [
+   9,
+   "major"
+  ],
+  "AC15": [
+   4,
+   "major"
+  ],
+  "AC16": [
+   11,
+   "major"
+  ],
+  "AC17": [
+   6,
+   "major"
+  ],
+  "AC01": [
+   7,
+   "major"
+  ],
+  "AC18": [
+   1,
+   "major"
+  ],
+  "AC19": [
+   8,
+   "major"
+  ],
+  "AC20": [
+   3,
+   "major"
+  ],
+  "AC21": [
+   10,
+   "major"
+  ],
+  "AC22": [
+   5,
+   "major"
+  ],
+  "AC23": [
+   0,
+   "major"
+  ],
+  "AC24": [
+   2,
+   "major"
+  ],
+  "AC25": [
+   9,
+   "major"
+  ],
+  "AC26": [
+   4,
+   "major"
+  ],
+  "AC02": [
+   2,
+   "major"
+  ],
+  "AC27": [
+   11,
+   "major"
+  ],
+  "AC28": [
+   6,
+   "major"
+  ],
+  "AC29": [
+   1,
+   "major"
+  ],
+  "AC30": [
+   8,
+   "major"
+  ],
+  "AC31": [
+   3,
+   "major"
+  ],
+  "AC32": [
+   10,
+   "major"
+  ],
+  "AC33": [
+   5,
+   "major"
+  ],
+  "AC34": [
+   0,
+   "major"
+  ],
+  "AC35": [
+   7,
+   "major"
+  ],
+  "AC36": [
+   2,
+   "major"
+  ],
+  "AC37": [
+   9,
+   "major"
+  ],
+  "AC38": [
+   4,
+   "major"
+  ],
+  "AC39": [
+   11,
+   "major"
+  ],
+  "AC40": [
+   6,
+   "major"
+  ],
+  "AC41": [
+   1,
+   "major"
+  ],
+  "AC42": [
+   8,
+   "major"
+  ],
+  "AC43": [
+   3,
+   "major"
+  ],
+  "AC44": [
+   10,
+   "major"
+  ],
+  "AC45": [
+   5,
+   "major"
+  ],
+  "AC03": [
+   4,
+   "major"
+  ],
+  "AC04": [
+   11,
+   "major"
+  ],
+  "AC05": [
+   6,
+   "major"
+  ],
+  "AC06": [
+   1,
+   "major"
+  ],
+  "AC07": [
+   8,
+   "major"
+  ]
+ },
+ "schellenberg": {
+  "fragment1": [
+   2,
+   "major"
+  ],
+  "fragment2": [
+   10,
+   "minor"
+  ],
+  "fragment3": [
+   7,
+   "major"
+  ],
+  "fragment4": [
+   2,
+   "minor"
+  ],
+  "fragment5": [
+   7,
+   "minor"
+  ],
+  "fragment6": [
+   0,
+   "major"
+  ],
+  "fragment7": [
+   7,
+   "major"
+  ],
+  "fragment8": [
+   2,
+   "minor"
+  ]
+ },
+ "manzara": {
+  "long": [
+   3,
+   "major"
+  ],
+  "short": [
+   7,
+   "major"
+  ]
+ }
+}
