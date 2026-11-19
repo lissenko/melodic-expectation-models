@@ -1,4 +1,4 @@
-# Evaluating Gestalt-Like, Multiple Viewpoint, and Neural Models of Melodic Expectation
+# Evaluating Gestalt-Like, Markov-Based, and Neural Network Models of Human Melodic Expectation
 
 Code and data of the paper by Lissenko, Rocamora, and Anglada-Tort. The repository can be used to:
 
@@ -46,8 +46,11 @@ python training/train_lstm.py --data my_midi_folder/ --out checkpoints/my_lstm/l
 ```
 
 The defaults are those of the paper: architecture, learning rate, and number of epochs. Melodies are
-grouped into families of near-duplicates and 400 + 1,000 melodies are held out by family
-(`training/split.py`); `--no_holdout` trains on every melody. `--features` selects the input features:
+grouped with their near-duplicates, and each group is assigned as a whole to the training set, the
+validation set (400 melodies), or the test set (1,000 melodies) (`training/split.py`); `--no_holdout`
+trains on every melody. The partition used in the paper is listed in `data/partition.json`, by file name
+of the Tegridy MIDI Dataset (Clean Melodies), and can be rebuilt with
+`python training/export_partition.py <corpus folder>`. `--features` selects the input features:
 
 | Feature | IDyOM viewpoint | |
 |---|---|---|
@@ -98,13 +101,14 @@ python evaluation/predict_stimuli.py --arch transformer --checkpoints checkpoint
 ```
 
 `results/predictions/` holds the predictions of the four models of the paper (Temperley's model, IDyOM,
-LSTM, Transformer). `results/idyom_output/` holds IDyOM's raw output (`.dat`) for the same predictions:
+LSTM, Transformer). `results/idyom_output/` holds IDyOM's raw output (`.dat`) for the same predictions,
+with IDyOM's default settings:
 
 ```lisp
 (idyom:idyom <dataset> '(cpitch) '(cpitch cpitch-class tessitura cpint contour cpintfip cpintfref
                                    (cpint dur) (cpint bioi) (cpint bioi-ratio-q) (cpint bioi-contour-q))
              :pretraining-ids '(<training set>) :k 1 :models :both
-             :ltmo '(:order-bound nil :escape :x :update-exclusion t) :stmo '(:order-bound nil) :detail 3)
+             :ltmo '(:order-bound nil :escape :c :update-exclusion nil) :stmo '(:order-bound nil) :detail 3)
 ```
 
 For Cuddy and Lunney, Schellenberg, and Fogel et al., each stimulus ends with one appended note, and

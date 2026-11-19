@@ -2,9 +2,9 @@
 
 Every model and every stage calls this, so the same music is used for the same
 purpose everywhere:
-  fit        training (networks, IDyOM long-term model, Temperley parameters)
-  selection  every configuration choice (epochs, learning rate, IDyOM settings)
-  test       every reported cross-entropy
+  fit        the training set: networks, IDyOM long-term model, Temperley parameters
+  selection  the validation set: the learning rate and number of epochs of the networks
+  test       the test set: every reported cross-entropy
 
 The corpus carries no song identity, and a third of its melodies have near
 duplicates elsewhere in it (other arrangements or excerpts of the same tune).
